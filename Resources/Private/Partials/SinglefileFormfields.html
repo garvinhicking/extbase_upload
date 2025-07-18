@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div>
+    <f:if condition="{item.file}">
+        <div>
+            Existing Filename: {item.file.originalResource.name}
+        </div>
+    </f:if>
+    <f:form.upload property="file" />
+</div>
+
+<div>
+    <f:form.submit value="Save" />
+</div>
+
