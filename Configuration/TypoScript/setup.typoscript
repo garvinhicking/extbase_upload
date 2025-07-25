@@ -4,3 +4,19 @@ plugin.tx_extbaseupload {
     singleFileUploadPid = 1
   }
 }
+
+module.tx_form {
+  settings {
+    yamlConfigurations {
+      100 = EXT:extbase_upload/Configuration/Form/FormSetup.yaml
+    }
+  }
+}
+
+plugin.tx_form {
+	settings {
+        yamlConfigurations {
+            100 = EXT:extbase_upload/Configuration/Form/FormSetup.yaml
+        }
+    }
+}
