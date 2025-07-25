@@ -10,7 +10,11 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 class Singlefile extends AbstractEntity
 {
-    // This below is the only code needed:
+    // Note: No allowedMimeTypes here; we want everything in
+    // textfile_ext, miscfile_ext, mediafile_ext but nothing
+    // else because of these two enabled by default:
+    // `security.system.enforceFileExtensionMimeTypeConsistency`
+    // `security.system.enforceAllowedFileExtensions`
     #[FileUpload([
         'validation' => [
             'maxFiles' => 1,
