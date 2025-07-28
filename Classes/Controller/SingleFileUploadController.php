@@ -21,6 +21,7 @@ class SingleFileUploadController extends ActionController
     {
         $this->view->assignMultiple([
             'items' => $this->singlefileRepository->findAll(),
+            'settings' => $this->settings,
         ]);
 
         return $this->htmlResponse();

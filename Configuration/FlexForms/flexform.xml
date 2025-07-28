@@ -1,0 +1,31 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <general>
+            <ROOT>
+                <sheetTitle>LLL:EXT:plugin/Resources/Private/Language/locallang_db.xml:flexform.pi1.sDEF</sheetTitle>
+                <el>
+                    <persistence.storagePid>
+                        <label>LLL:EXT:plugin/Resources/Private/Language/locallang_db.xml:flexform.pi1.storagePid</label>
+                        <config>
+                            <type>group</type>
+                            <size>5</size>
+                            <allowed>pages</allowed>
+                            <internal_type>db</internal_type>
+                            <maxitems>99</maxitems>
+                            <minitems>0</minitems>
+                            <show_thumbs>1</show_thumbs>
+                            <wizards>
+                                <suggest>
+                                    <type>suggest</type>
+                                </suggest>
+                            </wizards>
+                        </config>
+                    </persistence.storagePid>
+                </el>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>
