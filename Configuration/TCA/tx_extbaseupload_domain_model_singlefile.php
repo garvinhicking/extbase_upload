@@ -27,7 +27,9 @@ return [
     'types' => [
         '1' => [
             'showitem' => '
-                title, file,
+                title,
+                file_unrestricted_single, file_image_single, file_app_single, file_extension_single,  file_extensionstorage_single,
+                file_unrestricted_multi, file_image_multi, file_app_multi, file_extension_multi, file_extensionstorage_multi,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
                     --palette--;;language,
 
@@ -155,14 +157,104 @@ return [
                 'required' => true,
             ],
         ],
-        'file' => [
+
+        'file_unrestricted_single' => [
             'exclude' => true,
-            'label' => 'Single file',
+            'label' => 'Single file (unrestricted)',
             'config' => [
                 'type' => 'file',
                 'maxitems' => 1,
-                'allowed' => 'common-image-types',
             ],
         ],
+        'file_image_single' => [
+            'exclude' => true,
+            'label' => 'Single file (image)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 1,
+            ],
+        ],
+        'file_app_single' => [
+            'exclude' => true,
+            'label' => 'Single file (app)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 1,
+            ],
+        ],
+        'file_extension_single' => [
+            'exclude' => true,
+            'label' => 'Single file (extension validator)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 1,
+            ],
+        ],
+        'file_extensionstorage_single' => [
+            'exclude' => true,
+            'label' => 'Single file (extension validator with fallback)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 1,
+            ],
+        ],
+        'file_extensionstorageplus_single' => [
+            'exclude' => true,
+            'label' => 'Single file (extension validator with fallback and extra)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 1,
+            ],
+        ],
+
+        'file_unrestricted_multi' => [
+            'exclude' => true,
+            'label' => 'Multi file (unrestricted)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 1,
+            ],
+        ],
+        'file_image_multi' => [
+            'exclude' => true,
+            'label' => 'Multi file (image)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 10,
+            ],
+        ],
+        'file_app_multi' => [
+            'exclude' => true,
+            'label' => 'Multi file (app)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 10,
+            ],
+        ],
+        'file_extension_multi' => [
+            'exclude' => true,
+            'label' => 'Multi file (extension validator)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 10,
+            ],
+        ],
+        'file_extensionstorage_multi' => [
+            'exclude' => true,
+            'label' => 'Multi file (extension validator with fallback)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 10,
+            ],
+        ],
+        'file_extensionstorageplus_multi' => [
+            'exclude' => true,
+            'label' => 'Multi file (extension validator with fallback and extra)',
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 10,
+            ],
+        ],
+
     ],
 ];
